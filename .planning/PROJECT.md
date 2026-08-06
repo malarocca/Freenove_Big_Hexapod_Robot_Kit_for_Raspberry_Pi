@@ -43,6 +43,7 @@ The hexapod can move around on its own without crashing into things, pets, or ki
 - **Live hardware testing:** This Claude Code session runs directly on the Raspberry Pi that drives the physical robot — changes can be built and validated against the real hardware in real time during development, not just simulated.
 - **Codebase quality is mixed:** some hardware driver modules are modernized (type hints, docstrings — e.g. `adc.py`, `camera.py`, `servo.py`), others are legacy-style with wildcard imports and bare `except:` blocks (`control.py`, `imu.py`, `server.py`, most of the desktop client). No automated test suite exists for first-party code — only manual hardware smoke-test scripts (`test.py`, per-module `__main__` blocks).
 - **Long-term vision (explicitly beyond v1):** a real-time loop where Claude consumes live camera + sensor telemetry and directly pilots the robot for specific tasks, and — if audio hardware and "scripted audial interpretation" (speech I/O) prove feasible — a voice chat layer on top of that.
+- **Known open question — camera feed reliability:** user reported the camera feed was "finicky" when testing via the native mobile app. Unclear yet whether this is a streaming/network issue or a hardware issue (e.g. camera ribbon cable). Since camera-based motion detection is now in v1 scope, this needs a hardware-validation check early (perception phase) before building on top of it — a flaky feed at the source would undermine that requirement regardless of how the software is written.
 
 ## Constraints
 
