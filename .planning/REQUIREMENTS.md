@@ -78,29 +78,29 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AUTO-01 | TBD | Pending |
-| AUTO-02 | TBD | Pending |
-| AUTO-03 | TBD | Pending |
-| AUTO-04 | TBD | Pending |
-| AUTO-05 | TBD | Pending |
-| SENSE-01 | TBD | Pending |
-| SENSE-02 | TBD | Pending |
-| AVOID-01 | TBD | Pending |
-| AVOID-02 | TBD | Pending |
-| AVOID-03 | TBD | Pending |
-| AVOID-04 | TBD | Pending |
-| PATROL-01 | TBD | Pending |
-| CAUTION-01 | TBD | Pending |
-| CAUTION-02 | TBD | Pending |
-| CONFIG-01 | TBD | Pending |
-| CONFIG-02 | TBD | Pending |
-| CONFIG-03 | TBD | Pending |
+| AUTO-01 | Phase 1 | Pending |
+| AUTO-02 | Phase 1 | Pending |
+| AUTO-03 | Phase 1 | Pending |
+| AUTO-04 | Phase 1 | Pending |
+| AUTO-05 | Phase 3 | Pending |
+| SENSE-01 | Phase 1 | Pending |
+| SENSE-02 | Phase 1 | Pending |
+| AVOID-01 | Phase 1 | Pending |
+| AVOID-02 | Phase 2 | Pending |
+| AVOID-03 | Phase 2 | Pending |
+| AVOID-04 | Phase 2 | Pending |
+| PATROL-01 | Phase 2 | Pending |
+| CAUTION-01 | Phase 1 | Pending |
+| CAUTION-02 | Phase 3 | Pending |
+| CONFIG-01 | Phase 4 | Pending |
+| CONFIG-02 | Phase 3 | Pending |
+| CONFIG-03 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 17 total
-- Mapped to phases: 0 (pending roadmap creation)
-- Unmapped: 17 ⚠️ (expected prior to roadmap)
+- Mapped to phases: 17 (100%)
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-08-06*
-*Last updated: 2026-08-06 after initial definition*
+*Last updated: 2026-08-05 after roadmap creation*
