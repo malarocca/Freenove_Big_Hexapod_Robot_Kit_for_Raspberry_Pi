@@ -29,7 +29,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Sending any manual command (e.g. an arrow-key move) while auto mode is active immediately stops autonomous motion and hands control back to the user, with no wait for the current autonomous action to finish
   3. Placing an object in the robot's path causes it to stop, sweep its head across multiple bearings, and turn toward the more-open direction — a no-echo/missing ultrasonic reading is never treated as "clear," and a close-range reading is always treated as "stop and reassess," never "nudge past"
   4. Left running unattended, auto mode automatically halts on its own after the configured duration, settling into a stable stance rather than stopping mid-stride
-**Plans**: TBD
+**Plans**: 3 plans
+Plans:
+- [ ] 01-01-PLAN.md — Walking Skeleton: CMD_AUTO lifecycle, autonomy package, no-echo-honest sensing, interruptible gait, D-01 reconnect fix
+- [ ] 01-02-PLAN.md — Desktop client Auto Mode toggle and always-visible status badge
+- [ ] 01-03-PLAN.md — Three-bearing head sweep, CLEAR/CAUTION/BLOCKED hysteresis, ~45° evasive turn
 **UI hint**: yes
 
 ### Phase 2: Behavior Expansion — Robust Avoidance & Patrol
@@ -72,7 +76,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Auto-Mode Core — Walk & Avoid | 0/TBD | Not started | - |
+| 1. Auto-Mode Core — Walk & Avoid | 0/3 | Planned | - |
 | 2. Behavior Expansion — Robust Avoidance & Patrol | 0/TBD | Not started | - |
 | 3. Pet/Kid Safety & Status Signaling | 0/TBD | Not started | - |
 | 4. Tuning & Observability | 0/TBD | Not started | - |
