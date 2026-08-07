@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 context gathered
-last_updated: "2026-08-07T04:29:15.981Z"
+stopped_at: Phase 1 UI-SPEC approved
+last_updated: "2026-08-07T05:20:46.353Z"
 last_activity: 2026-08-05 — Roadmap created from requirements + research
 progress:
   total_phases: 4
@@ -85,6 +85,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-07T04:29:15.930Z
-Stopped at: Phase 1 context gathered
-Resume file: .planning/phases/01-auto-mode-core-walk-avoid/01-CONTEXT.md
+Last session: 2026-08-07T05:20:46.305Z
+Stopped at: Phase 1 UI-SPEC approved
+Resume file: .planning/phases/01-auto-mode-core-walk-avoid/01-UI-SPEC.md
