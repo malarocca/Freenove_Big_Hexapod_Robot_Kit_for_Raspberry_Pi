@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-08-07T07:37:35.371Z",
+  "phase": "01",
+  "phase_name": "auto-mode-core-walk-avoid",
+  "phase_dir": ".planning/phases/01-auto-mode-core-walk-avoid",
+  "plan": 1,
+  "task": 3,
+  "total_tasks": 3,
+  "status": "paused",
+  "completed_tasks": [
+    {"id": 1, "name": "Create the autonomy package — settings, no-echo-honest perception, and the walk/stop decision loop", "status": "done", "commit": "cdf822c"},
+    {"id": 2, "name": "Wire CMD_AUTO into the server, make run_gait manually interruptible, and fix the dead TCP reconnect path", "status": "done", "commit": "ba4efbb"},
+    {"id": 3, "name": "On-device walkthrough — autonomous walk, obstacle stop, no-echo stop, manual override, bounded halt", "status": "in_progress", "progress": "checkpoint:human-verify reached; 9-step physical test procedure presented to operator, awaiting execution + approval"}
+  ],
+  "remaining_tasks": [
+    {"id": 3, "name": "On-device walkthrough (same as above — resume via continuation agent once approved)", "status": "checkpoint_pending"}
+  ],
+  "blockers": [
+    {"description": "Plan 01-01 Task 3 requires a human physically at the robot to run a 9-step hardware test (obstacle stop, no-echo stop, manual override latency, 30s bounded-halt, disconnect/reconnect, malformed-command rejection) — cannot be simulated by an agent.", "type": "human_action", "workaround": "none — must be run live"}
+  ],
+  "human_actions_pending": [
+    {"action": "Run the 9-step on-device walkthrough for plan 01-01 (see checkpoint details below) and reply 'approved' or describe what misbehaved, with measured override latency and stop distance if available.", "context": "Safety-critical: this verifies obstacle stop, no-echo-honest sensing, manual override preemption, and bounded auto-halt on real hardware before any further phase work proceeds.", "blocking": true}
+  ],
+  "decisions": [],
+  "uncommitted_files": [".planning/STATE.md"],
+  "next_action": "Ask the user to run the plan 01-01 checkpoint's 9-step hardware walkthrough (posted in chat before this pause). On 'approved', spawn a continuation executor agent in the SAME worktree (worktree-agent-ab149f1102043bce0 at .claude/worktrees/agent-ab149f1102043bce0, based on commits cdf822c + ba4efbb) to finish Task 3, write SUMMARY.md, commit, then the orchestrator merges that worktree branch back into 'autonomy' and proceeds to Wave 2 (plan 01-02).",
+  "context_notes": "Executing Phase 01 (auto-mode-core-walk-avoid) via /bm:execute-phase 01. 3 plans, 3 sequential waves, all autonomous:false (each has a hardware checkpoint). Wave 1 (plan 01-01, Walking Skeleton) executor ran in an isolated git worktree and completed tasks 1-2 cleanly (all automated verification passed), then correctly stopped at the human-verify checkpoint for task 3 rather than attempting to fake physical hardware verification. The worktree has NOT been merged into 'autonomy' yet — do not delete '.claude/worktrees/agent-ab149f1102043bce0' or branch 'worktree-agent-ab149f1102043bce0' before that merge happens, those two commits only exist there. Waves 2 (01-02, client GUI toggle) and 3 (01-03, real avoidance behavior) have not started."
+}
