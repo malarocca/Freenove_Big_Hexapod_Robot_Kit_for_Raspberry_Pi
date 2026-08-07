@@ -30,6 +30,7 @@ class Control:
         self.calibration_angles = [[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0]]
         self.current_angles = [[90, 0, 0], [90, 0, 0], [90, 0, 0], [90, 0, 0], [90, 0, 0], [90, 0, 0]]
         self.command_queue = ['', '', '', '', '', '']
+        self.manual_preempt = threading.Event()  # set only by server.py's manual command path; autonomy never sets this
         self.calibrate()
         self.set_leg_angles()
         self.condition_thread = threading.Thread(target=self.condition_monitor)
@@ -327,6 +328,7 @@ class Control:
             self.set_leg_angles()
 
     def run_gait(self, data, Z=40, F=64):  # Example: data=['CMD_MOVE', '1', '0', '25', '10', '0']
+        self.manual_preempt.clear()  # clearing here (not in condition_monitor) removes the set/consume race
         gait = data[1]
         x = self.restrict_value(int(data[2]), -35, 35)
         y = self.restrict_value(int(data[3]), -35, 35)
@@ -347,6 +349,8 @@ class Control:
             self.set_leg_angles()
         elif gait == "1":
             for j in range(F):
+                if self.manual_preempt.is_set():
+                    return  # a manual command arrived mid-stride; abort so it takes effect immediately
                 for i in range(3):
                     if j < (F / 8):
                         points[2 * i][0] = points[2 * i][0] - 4 * xy[2 * i][0]
@@ -387,6 +391,8 @@ class Control:
             number = [5, 2, 1, 0, 3, 4]
             for i in range(6):
                 for j in range(int(F / 6)):
+                    if self.manual_preempt.is_set():
+                        return  # a manual command arrived mid-stride; abort so it takes effect immediately
                     for k in range(6):
                         if number[i] == k:
                             if j < int(F / 18):

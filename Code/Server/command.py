@@ -13,6 +13,7 @@ class COMMAND:
     CMD_CALIBRATION = "CMD_CALIBRATION"
     CMD_CAMERA = "CMD_CAMERA"
     CMD_SERVOPOWER = "CMD_SERVOPOWER"
-    
+    CMD_AUTO = "CMD_AUTO"
+
     def __init__(self):
         pass
