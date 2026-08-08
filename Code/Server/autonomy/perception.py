@@ -1,4 +1,3 @@
-import threading
 import time
 
 from . import settings
@@ -19,37 +18,61 @@ class SensorHub:
         self._ultrasonic = ultrasonic_sensor                # Server.ultrasonic_sensor — never construct a new sensor instance here
         self._servo = head_servo                            # Server.servo_controller — never construct a new servo instance here
         self._latest = (None, time.monotonic())            # (distance_cm_or_None, monotonic_timestamp), atomic tuple rebind
-        self._stop_event = threading.Event()
-        self._poll_thread = None
+        self._original_read = None                          # set while the capture wrapper is installed, for restore in stop()
 
-    def read_raw_distance_cm(self):
-        """Bypass Ultrasonic.get_distance()'s smoothing to get an honest no-echo signal."""
-        try:
-            # sensor._read() is a semi-private gpiozero method, verified against gpiozero 2.0.1:
-            # it returns a float in [0.0, 1.0] on success or a genuine None on no-echo, bypassing
-            # SmoothedInputDevice's ignore={None} filtering that silently swallows no-echo samples.
-            raw = self._ultrasonic.sensor._read()
-            if raw is None:
-                return None                                 # genuine unknown — never invent a value
-            return round(raw * self._ultrasonic.max_distance * 100, 1)
-        except Exception as e:
-            print(f"SensorHub: raw distance read failed: {e}")
-            return None                                     # an errored read is unknown, not clear
+    def _to_cm(self, raw):
+        """Convert gpiozero's raw [0.0, 1.0] echo fraction to centimeters; None stays None."""
+        if raw is None:
+            return None                                     # genuine unknown — never invent a value
+        return round(raw * self._ultrasonic.max_distance * 100, 1)
+
+    def _install_capture(self):
+        """Idempotently splice into gpiozero's OWN polling thread instead of running a second one.
+
+        gpiozero.DistanceSensor already runs a background GPIOQueue thread calling _read()
+        continuously for the entire process lifetime (it backs the smoothed .distance property
+        that CMD_SONIC/get_distance() rely on). A second thread calling _read() independently
+        (the previous _poll_loop) fired the same trigger/echo pins on an uncoordinated schedule
+        and corrupted nearly every reading. Wrapping the existing bound method lets gpiozero's
+        thread remain the sole caller of real hardware _read() while we passively observe every
+        result it already produces.
+        """
+        if self._original_read is not None:
+            return                                          # already installed, do not double-wrap
+        original_read = self._ultrasonic.sensor._read
+
+        def _captured_read():
+            value = original_read()
+            try:
+                self._latest = (self._to_cm(value), time.monotonic())
+            except Exception as e:
+                print(f"SensorHub: capture failed: {e}")
+            return value                                     # unchanged, so gpiozero's own smoothing sees no difference
+
+        self._original_read = original_read
+        self._ultrasonic.sensor._read = _captured_read
+
+    def _uninstall_capture(self):
+        """Remove the instance-level override, so the wrapper never outlives this SensorHub
+        and lookups fall back to gpiozero's own class-bound _read, exactly as before we wrapped."""
+        if self._original_read is None:
+            return                                          # not installed, nothing to restore
+        del self._ultrasonic.sensor._read
+        self._original_read = None
 
     def read_first_distance_cm(self, timeout=settings.FIRST_READ_TIMEOUT_SECONDS):
-        """Bounded first read — guards the boot-time case where gpiozero's queue never fills."""
-        result = {}
-
-        def _read():
-            result['value'] = self.read_raw_distance_cm()
-
-        reader_thread = threading.Thread(target=_read, daemon=True)
-        reader_thread.start()
-        reader_thread.join(timeout)
-        if reader_thread.is_alive():
-            print("SensorHub: first distance read timed out")
-            return None                                     # sensor never produced a first reading in time
-        return result.get('value')
+        """Bounded first read — waits for gpiozero's own thread to produce a fresh sample
+        rather than calling _read() again ourselves (that would recreate the dual-poller bug)."""
+        self._install_capture()
+        started_at = time.monotonic()
+        deadline = started_at + timeout
+        while time.monotonic() < deadline:
+            distance, timestamp = self._latest
+            if timestamp >= started_at:
+                return distance                             # fresh sample captured since we started waiting
+            time.sleep(0.01)
+        print("SensorHub: first distance read timed out")
+        return None                                          # sensor never produced a first reading in time
 
     def center_head(self):
         """Center the pan servo, clamped into the unattended-safe window."""
@@ -59,24 +82,13 @@ class SensorHub:
         except Exception as e:
             print(f"SensorHub: center_head failed: {e}")
 
-    def _poll_loop(self):
-        """Background poller: refresh the latest (distance, timestamp) snapshot at SENSOR_POLL_HZ."""
-        while not self._stop_event.is_set():
-            distance = self.read_raw_distance_cm()
-            self._latest = (distance, time.monotonic())     # atomic tuple rebind, matches command_queue's convention
-            time.sleep(1.0 / settings.SENSOR_POLL_HZ)
-
     def start(self):
-        """Start the background polling thread."""
-        self._stop_event.clear()
-        self._poll_thread = threading.Thread(target=self._poll_loop, daemon=True)
-        self._poll_thread.start()
+        """Install the read-capture wrapper. No dedicated thread — gpiozero's own thread drives it."""
+        self._install_capture()
 
     def stop(self):
-        """Stop the background polling thread."""
-        self._stop_event.set()
-        if self._poll_thread is not None:
-            self._poll_thread.join(timeout=1.0)
+        """Remove the read-capture wrapper, restoring gpiozero's untouched original _read."""
+        self._uninstall_capture()
 
     def latest(self):
         """Return (distance_cm, age_seconds); distance is None if unknown or stale."""
