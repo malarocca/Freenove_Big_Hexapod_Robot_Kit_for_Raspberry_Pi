@@ -7,11 +7,15 @@ BLOCKED = "BLOCKED"
 CLEAR = "CLEAR"
 
 
-def decide(distance_cm):
-    """Pure walk/stop decision: unknown or close-range readings are always BLOCKED."""
-    if distance_cm is None or distance_cm < settings.STOP_THRESHOLD_CM:
-        return BLOCKED                                      # unknown/close is never treated as clear
-    return CLEAR
+def decide(distance_cm, was_blocked=False):
+    """Pure walk/stop decision with hysteresis (D-06): once BLOCKED, stay BLOCKED until
+    the reading clears RESUME_THRESHOLD_CM, not just STOP_THRESHOLD_CM. Prevents a single
+    noisy reading from re-triggering forward motion next to a still-present obstacle."""
+    if distance_cm is None:
+        return BLOCKED                                      # unknown is never clear
+    if was_blocked:
+        return BLOCKED if distance_cm < settings.RESUME_THRESHOLD_CM else CLEAR
+    return BLOCKED if distance_cm < settings.STOP_THRESHOLD_CM else CLEAR
 
 
 class AutoModeController:
@@ -26,6 +30,7 @@ class AutoModeController:
         self._settle_on_exit = True
         self._last_intent = None                             # cached last-emitted intent, avoids twitchy rebinds
         self._last_queue_ref = None                          # tracks whether condition_monitor reset the queue
+        self._was_blocked = False                            # hysteresis state (D-06), reset per-run in start()
 
     def start(self):
         """Arm the bounded-runtime deadline and spawn the decision loop. No-op if already running."""
@@ -39,6 +44,7 @@ class AutoModeController:
         self._settle_on_exit = True
         self._last_intent = None
         self._last_queue_ref = None
+        self._was_blocked = False                            # fresh run must not inherit a prior run's blocked state
         self.auto_mode_active.set()
         self._worker_thread = threading.Thread(target=self._run, daemon=True)
         self._worker_thread.start()
@@ -79,7 +85,8 @@ class AutoModeController:
                     self.auto_mode_active.clear()
                     break
                 distance_cm, _age_seconds = self._sensor_hub.latest()
-                state = decide(distance_cm)
+                state = decide(distance_cm, self._was_blocked)
+                self._was_blocked = (state == BLOCKED)
                 if state == BLOCKED:
                     self._emit(self._halt_intent())
                 else:
@@ -117,17 +124,20 @@ class AutoModeController:
 
 if __name__ == '__main__':
     test_cases = [
-        (None, BLOCKED),
-        (19.9, BLOCKED),
-        (21.0, CLEAR),
-        (0.0, BLOCKED),
+        (None, False, BLOCKED),
+        (19.9, False, BLOCKED),
+        (21.0, False, CLEAR),
+        (0.0, False, BLOCKED),
+        (None, True, BLOCKED),
+        (25.0, True, BLOCKED),                                # under RESUME_THRESHOLD_CM despite clearing STOP_THRESHOLD_CM
+        (36.0, True, CLEAR),                                  # past the resume gate
     ]
     all_passed = True
-    for distance_cm, expected in test_cases:
-        actual = decide(distance_cm)
+    for distance_cm, was_blocked, expected in test_cases:
+        actual = decide(distance_cm, was_blocked)
         passed = actual == expected
         all_passed = all_passed and passed
         status = "PASS" if passed else "FAIL"
-        print(f"{status}: decide({distance_cm}) -> {actual} (expected {expected})")
+        print(f"{status}: decide({distance_cm}, was_blocked={was_blocked}) -> {actual} (expected {expected})")
     if not all_passed:
         raise SystemExit(1)
