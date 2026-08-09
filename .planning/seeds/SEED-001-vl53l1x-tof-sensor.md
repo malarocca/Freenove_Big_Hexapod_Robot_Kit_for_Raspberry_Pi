@@ -36,13 +36,15 @@ ultrasonic), doesn't share ultrasonic's soft/angled-surface weakness, and its ow
 failure modes (glass/mirrors, extremely IR-absorptive black surfaces) are less common in a
 home environment than ultrasonic's failure modes.
 
-**Open question to resolve when this seed is worked:** does the VL53L1X *replace* the
-ultrasonic outright, or should both be fused (dual-sensor arbitration)? Working
-recommendation captured here: **replace, don't fuse** — this is a single narrow-beam ranging
-sensor on a panning head, same shape as today's setup, and simplification should be the
-default unless a specific gap shows up in testing. Sensor fusion adds real complexity
-(arbitration logic, disagreement handling) that the "no new sensors planned for v1" /
-reactive-only constraints don't currently justify.
+**Open question, resolved 2026-08-08:** does the VL53L1X *replace* the ultrasonic outright, or
+should both be kept? Claude's initial recommendation was "replace, don't fuse" (simplicity,
+since both are single narrow-beam sensors on the same panning head). **User preferred keeping
+the ultrasonic as a failover** rather than removing it outright — i.e. VL53L1X as primary
+sensor, ultrasonic retained as a fallback/cross-check for the ToF's known weak spots
+(glass/mirrors, very IR-absorptive black surfaces). This does re-introduce the arbitration
+question (what happens when the two disagree, and what triggers falling back to the
+ultrasonic) — that design should be worked out when this seed is picked up, informed by
+whatever VL53L1X failure modes actually show up in testing rather than guessed in advance.
 
 **Scope note:** Adding this sensor means updating CLAUDE.md's current stated hardware
 constraint — "Obstacle sensing must work with what exists today — one ultrasonic sensor +
@@ -64,7 +66,8 @@ touching sensing/perception scope, in case the near-term nudge is missed.
   would need e.g. `smbus`-based driver or a small vendored library, following the existing
   `Code/Server/adc.py`/`pca9685.py` I2C pattern).
 - `Code/Server/autonomy/perception.py` (`SensorHub`) — swap or abstract the reading source.
-- Possibly `Code/Server/ultrasonic.py` if keeping both sensors behind a shared interface.
+- `Code/Server/ultrasonic.py` kept alongside the new driver (user wants failover, not
+  replacement) — needs an arbitration/fallback strategy in `SensorHub`, not just a swap.
 - `CLAUDE.md` constraint update (explicit scope decision, not just code).
 - Re-verification of the full Phase 01 Task 3 hardware checkpoint once wired in.
 
