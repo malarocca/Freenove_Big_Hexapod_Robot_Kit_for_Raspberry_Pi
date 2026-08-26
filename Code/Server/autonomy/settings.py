@@ -1,0 +1,16 @@
+AUTO_RUN_SECONDS = 300            # D-08, five-minute bounded runtime
+STOP_THRESHOLD_CM = 20.0          # D-04, close-range stop-and-reassess
+RESUME_THRESHOLD_CM = 35.0        # D-06, hysteresis resume gate
+LOOP_HZ = 10                      # decision loop rate
+SENSOR_POLL_HZ = 10               # perception thread rate
+SENSOR_STALE_SECONDS = 0.6        # a snapshot older than this is UNKNOWN, never clear
+FIRST_READ_TIMEOUT_SECONDS = 1.0  # bounded startup read, guards the gpiozero hang-forever case
+WALK_GAIT = "1"
+WALK_SPEED = 8                    # brisk enough to keep a gait cycle at ~0.48 s; matches the client's own default speed slider value
+WALK_STEP_Y = 25                  # forward magnitude, same units the client's move() sends, valid range 0-35
+PAN_CHANNEL = 1                   # channel 1 is pan/left-right per the client's live-tested slider wiring; channel 0 is tilt
+TILT_CHANNEL = 0
+PAN_CENTER = 90
+PAN_SAFE_MIN = 30
+PAN_SAFE_MAX = 150                # deliberately narrower than the client's 0-180 slider range, margin from mechanical hard-stops for unattended sweeps
+STOP_AUTO_ON_DISCONNECT = False   # D-03 default: auto mode survives a client disconnect; the bounded timer is the safety net

@@ -23,7 +23,7 @@ class MyWindow(QMainWindow,Ui_server):
             self.on_and_off_server()
         if self.start_tcp:
             self.server.start_server()
-            self.server.tcp_flag=True
+            self.server.is_tcp_active=True
             self.video=threading.Thread(target=self.server.transmit_video)
             self.video.start()
             self.instruction=threading.Thread(target=self.server.receive_commands)
@@ -46,7 +46,7 @@ class MyWindow(QMainWindow,Ui_server):
             self.pushButton_On_And_Off.setText('Off')
             self.states.setText('On')
             self.server.start_server()
-            self.server.tcp_flag=True
+            self.server.is_tcp_active=True
             self.video=threading.Thread(target=self.server.transmit_video)
             self.video.start()
             self.instruction=threading.Thread(target=self.server.receive_commands)
@@ -54,7 +54,7 @@ class MyWindow(QMainWindow,Ui_server):
         else:
             self.pushButton_On_And_Off.setText('On')
             self.states.setText('Off')
-            self.server.tcp_flag=False
+            self.server.is_tcp_active=False
             try:
                 Thread.stop_thread(self.video)
                 Thread.stop_thread(self.instruction)

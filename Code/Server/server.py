@@ -14,7 +14,10 @@ from control import Control
 from adc import ADC
 from ultrasonic import Ultrasonic
 from command import COMMAND as cmd
-from camera import Camera  
+from camera import Camera
+from autonomy.behavior import AutoModeController
+from autonomy.perception import SensorHub
+from autonomy import settings as autonomy_settings
 
 class StreamingOutput(io.BufferedIOBase):
     def __init__(self):
@@ -38,9 +41,11 @@ class Server:
         self.control_system = Control()
         self.ultrasonic_sensor = Ultrasonic()
         self.camera_device = Camera()  
-        self.led_thread = None 
-        self.ultrasonic_thread = None  
+        self.led_thread = None
+        self.ultrasonic_thread = None
         self.control_system.condition_thread.start()
+        self.sensor_hub = SensorHub(self.ultrasonic_sensor, self.servo_controller)  # reuses the existing singletons
+        self.auto_controller = AutoModeController(self.control_system, self.sensor_hub, status_callback=self.send_auto_status)
 
     def get_interface_ip(self):
         # Get the IP address of the wlan0 interface
@@ -88,6 +93,15 @@ class Server:
         except Exception as e:
             print(e)
 
+    def send_auto_status(self, active):
+        # Announce every auto-mode state change to the connected client, including ones it didn't ask for
+        # (bounded-runtime halt, manual preempt, fail-safe stop) so the client badge is always honest.
+        try:
+            status_command = cmd.CMD_AUTO + "#" + ("1" if active else "0") + "\n"
+            self.send_data(self.command_connection, status_command)
+        except Exception as e:
+            print(f"send_auto_status failed: {e}")
+
     def transmit_video(self):
         # Transmit video frames to the connected client
         try:
@@ -117,6 +131,7 @@ class Server:
         try:
             self.command_connection, self.command_client_address = self.command_socket.accept()
             print("Client connection successful !")
+            self.send_auto_status(self.auto_controller.is_active())  # D-03 reconnect sync: always learn the true state
         except:
             print("Client connect failed")
         self.command_socket.close()
@@ -125,12 +140,16 @@ class Server:
             try:
                 received_data = self.command_connection.recv(1024).decode('utf-8')
             except:
+                if autonomy_settings.STOP_AUTO_ON_DISCONNECT:
+                    self.auto_controller.stop(settle=True)  # D-03: only when configured to stop on disconnect
                 if self.is_tcp_active:
                     self.reset_server()
                     break
                 else:
                     break
             if received_data == "" and self.is_tcp_active:
+                if autonomy_settings.STOP_AUTO_ON_DISCONNECT:
+                    self.auto_controller.stop(settle=True)  # D-03: only when configured to stop on disconnect
                 self.reset_server()
                 break
             else:
@@ -188,6 +207,7 @@ class Server:
                         self.servo_controller.set_servo_angle(0, x)
                         self.servo_controller.set_servo_angle(1, y)
                 elif cmd.CMD_RELAX in command_parts:
+                    self.auto_controller.preempt()  # a human relaxing the legs must end autonomy, not fight it
                     if self.is_servo_relaxed == False:
                         self.control_system.relax(True)
                         self.is_servo_relaxed = True
@@ -197,14 +217,27 @@ class Server:
                         self.is_servo_relaxed = False
                         print("unrelax")
                 elif cmd.CMD_SERVOPOWER in command_parts:
+                    self.auto_controller.preempt()  # a human cutting servo power must end autonomy, not fight it
                     if command_parts[1] == "0":
                         self.control_system.servo_power_disable.on()
                     else:
                         self.control_system.servo_power_disable.off()
-
+                elif cmd.CMD_AUTO in command_parts:
+                    if len(command_parts) == 2 and command_parts[1] in ("0", "1"):
+                        if command_parts[1] == "1":
+                            self.auto_controller.start()
+                        else:
+                            self.auto_controller.stop(settle=True)
+                        self.send_auto_status(self.auto_controller.is_active())  # ack the real post-call state
+                    else:
+                        print(f"Rejected malformed CMD_AUTO payload: {command_parts}")
                 else:
+                    if command_parts[0] in (cmd.CMD_MOVE, cmd.CMD_POSITION, cmd.CMD_ATTITUDE, cmd.CMD_BALANCE):
+                        self.auto_controller.preempt()  # manual always preempts, cleared before the write below
                     self.control_system.command_queue = command_parts
                     self.control_system.timeout = time.time()
+                    if command_parts[0] in (cmd.CMD_MOVE, cmd.CMD_POSITION, cmd.CMD_ATTITUDE, cmd.CMD_BALANCE):
+                        self.control_system.manual_preempt.set()  # abort any in-flight gait so the new command lands now
         try:
             if self.led_thread is not None:
                 stop_thread(self.led_thread)
