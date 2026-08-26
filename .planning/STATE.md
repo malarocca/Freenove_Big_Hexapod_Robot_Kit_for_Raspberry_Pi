@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 01 Plan 01-01 Task 3 -- hardware walkthrough paused mid-checkpoint (steps 4/5/7/8/9 not yet run); VL53L1X spike track (001-004) completed in parallel
-last_updated: "2026-08-26T04:42:00.000Z"
-last_activity: 2026-08-26 -- Spike track (003 problem-surface-failure-modes, 004 dual-sensor-sensorhub-integration) completed; SEED-001 updated to reflect inverted sensor roles
+stopped_at: Phase 01 Plan 01-01 COMPLETE and merged; Wave 2 (plan 01-02, client GUI) not yet started
+last_updated: "2026-08-26T05:05:00.000Z"
+last_activity: 2026-08-26 -- Plan 01-01 Task 3 hardware walkthrough finished live (steps 4-9 + CMD_BALANCE variant, all passed), worktree merged to autonomy, worktree removed
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 3
-  completed_plans: 0
-  percent: 0
+  completed_plans: 1
+  percent: 8
 ---
 
 # Project State
@@ -21,24 +21,26 @@ progress:
 See: .planning/PROJECT.md (updated 2026-08-06)
 
 **Core value:** The hexapod can move around on its own without crashing into things, pets, or kids.
-**Current focus:** Phase 01 — auto-mode-core-walk-avoid (Plan 01-01, Task 3: on-device hardware walkthrough, still incomplete)
+**Current focus:** Phase 01 — auto-mode-core-walk-avoid (Plan 01-01 complete; Wave 2 / plan 01-02 next)
 
 ## Current Position
 
 Phase: 01 (auto-mode-core-walk-avoid) — EXECUTING
-Plan: 1 of 3 (01-01 "Walking Skeleton")
-Task: 3 of 3 -- on-device walkthrough, PAUSED mid-checkpoint
-Status: Executing Phase 01. Tasks 1-2 done (commits `cdf822c`, `ba4efbb`, plus fixes
-`ff87cda` hysteresis and `12a7fda` dual-poller GPIO contention) -- all four commits live only
-on the unmerged worktree branch `worktree-agent-ab149f1102043bce0`, not yet merged to
-`autonomy`. Task 3's 9-step hardware checkpoint: steps 1,2,3,6 passed; step 4 previously
-failed (obstacle contact, root-caused to missing hysteresis, since fixed but not re-verified
-live); steps 5,7,8,9 never run. The session that would have finished this walkthrough
-detoured into a full VL53L1X sensor-evaluation spike track instead (see Accumulated
-Context below) -- the walkthrough itself has NOT been resumed since 2026-08-08.
-Last activity: 2026-08-26 -- spike track completed (see below)
+Plan: 1 of 3 (01-01 "Walking Skeleton") — COMPLETE, merged to `autonomy` (commit `db67780`)
+Status: Plan 01-01 fully done. All four implementation commits (`cdf822c`, `ba4efbb`,
+`ff87cda` hysteresis, `12a7fda` dual-poller GPIO contention) merged from the worktree branch
+`worktree-agent-ab149f1102043bce0` (now deleted, along with its worktree). Task 3's 9-step
+hardware checkpoint passed end-to-end live on 2026-08-26: steps 1,2,3,6 (passed 2026-08-08),
+step 4 re-verified with the hysteresis fix in place (two hold/remove cycles, zero contact),
+step 5 (no-echo -> stop), step 7 (malformed CMD_AUTO rejected), step 8 (300s bounded halt,
+observed via a naturally-occurring real timer firing, not the plan's shortened-timer
+suggestion), step 9 (disconnect/reconnect sync). A supplementary CMD_BALANCE#1
+manual-override variant was also verified. SUMMARY.md written and merged
+(`.planning/phases/01-auto-mode-core-walk-avoid/01-01-SUMMARY.md`).
+Next: Wave 2 (plan 01-02, client GUI Auto Mode toggle + status badge) — not yet started.
+Last activity: 2026-08-26 -- Task 3 walkthrough completed, worktree merged and cleaned up
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█░░░░░░░░░] 8% (1 of 3 plans in Phase 01 complete; 0 of 4 phases complete)
 
 ## Performance Metrics
 
@@ -82,11 +84,13 @@ None yet.
 
 - [Phase 2 planning]: Gait engine variable-speed support (AVOID-04) is unverified — check `control.py`/`run_gait` during Phase 2 planning; fall back to binary stop if not feasible.
 - [Phase 1 planning]: `command_queue` locking/arbitration strategy (lock vs. Queue refactor) is an unresolved design decision — research flags this as the highest-risk integration point; resolve during Phase 1 planning, not deferred.
-- [Phase 1 planning]: TCP reconnect dead-code bug undermines "manual override always available" — fix-vs-accept decision needed during Phase 1 planning since manual override is a Phase 1 requirement (AUTO-02). (Fixed in commit `ba4efbb`, part of the unmerged worktree branch — needs merge to land on `autonomy`.)
+- ~~[Phase 1 planning]: TCP reconnect dead-code bug undermines "manual override always available"~~ — **RESOLVED**, fixed in `ba4efbb`, merged to `autonomy` 2026-08-26.
 - ~~[Phase 1/2]: Real-world ultrasonic behavior against soft/angled/low-profile obstacles is unvalidated~~ — **RESOLVED by spike 003** (2026-08-26): no surface-specific failure mode found; ultrasonic tracked pillow/blanket, angled hard, and low-profile targets accurately across the full tested range.
-- [Phase 01 Plan 01-01 Task 3]: On-device hardware walkthrough is still incomplete — steps 4 (obstacle-stop retest with the hysteresis fix), 5 (no-echo-honest stop), 7 (malformed command rejection), 8 (bounded 30s auto-halt), 9 (disconnect/reconnect) have never been successfully run, across two sessions (2026-08-08, 2026-08-25). Ultrasonic hardware itself is now confirmed fully repaired and accurate (spike 002/003), so nothing should be blocking a retry except scheduling it.
-- [Phase 01 Plan 01-01]: Worktree branch `worktree-agent-ab149f1102043bce0` (commits `cdf822c`, `ba4efbb`, `ff87cda`, `12a7fda`) is still unmerged into `autonomy` — do not delete this worktree/branch before Task 3 completes and the plan is merged.
+- ~~[Phase 01 Plan 01-01 Task 3]: On-device hardware walkthrough is still incomplete~~ — **RESOLVED 2026-08-26**: all 9 steps passed live, plan merged.
+- ~~[Phase 01 Plan 01-01]: Worktree branch unmerged~~ — **RESOLVED**: merged to `autonomy` (`db67780`), worktree and branch removed.
 - [SEED-001, open product-scope question]: Given VL53L1X can't improve stop/clear safety margin over ultrasonic alone (per the spike track), is the integration complexity worth it purely for a directional-precision assist (e.g. future plan 01-03 sweep/pick-open-side logic)? Not yet decided.
+- [New, 2026-08-26 live testing]: Gait stance looks lower/more dragging than expected during autonomous walking — not autonomy-specific (same `run_gait` code path as manual teleop), worth a look during Phase 2 gait-quality work.
+- [New, 2026-08-26 live testing]: One leg sits slightly off the ground during `CMD_BALANCE#1` stance — likely needs `Code/Client/Calibration.py`-driven recalibration of `point.txt` leg offsets. Not blocking, not caused by this phase's code.
 
 ## Deferred Items
 
@@ -98,6 +102,6 @@ Items acknowledged and carried forward from previous milestone close:
 
 ## Session Continuity
 
-Last session: 2026-08-26T04:42:00.000Z
-Stopped at: VL53L1X spike track (001-004) complete, SEED-001 updated; Phase 01 Plan 01-01 Task 3's hardware walkthrough (steps 4/5/7/8/9) still not resumed
-Resume file: .planning/phases/01-auto-mode-core-walk-avoid/.continue-here.md (itself stale, dated 2026-08-08 -- see .planning/spikes/MANIFEST.md and SEED-001 for everything since), or .planning/spikes/004-dual-sensor-sensorhub-integration/README.md for the latest completed work
+Last session: 2026-08-26T05:05:00.000Z
+Stopped at: Phase 01 Plan 01-01 complete and merged. Next up: plan 01-02 (Wave 2, client GUI Auto Mode toggle + status badge) -- not yet started, no blockers.
+Resume file: .planning/phases/01-auto-mode-core-walk-avoid/01-02-PLAN.md (Wave 2 plan, ready to execute); .planning/phases/01-auto-mode-core-walk-avoid/01-01-SUMMARY.md for what Wave 1 delivered; .planning/phases/01-auto-mode-core-walk-avoid/.continue-here.md is now stale (describes the just-finished Task 3 walkthrough) and should be refreshed or retired at the start of the next session.

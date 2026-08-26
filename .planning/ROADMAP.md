@@ -37,7 +37,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 Plans:
 **Wave 1**
 
-- [ ] 01-01-PLAN.md — Walking Skeleton: CMD_AUTO lifecycle, autonomy package, no-echo-honest sensing, interruptible gait, D-01 reconnect fix
+- [x] 01-01-PLAN.md — Walking Skeleton: CMD_AUTO lifecycle, autonomy package, no-echo-honest sensing, interruptible gait, D-01 reconnect fix
 
 **Wave 2** *(blocked on Wave 1 completion)*
 
@@ -98,7 +98,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Auto-Mode Core — Walk & Avoid | 0/3 | Planned | - |
+| 1. Auto-Mode Core — Walk & Avoid | 1/3 | In Progress|  |
 | 2. Behavior Expansion — Robust Avoidance & Patrol | 0/TBD | Not started | - |
 | 3. Pet/Kid Safety & Status Signaling | 0/TBD | Not started | - |
 | 4. Tuning & Observability | 0/TBD | Not started | - |
