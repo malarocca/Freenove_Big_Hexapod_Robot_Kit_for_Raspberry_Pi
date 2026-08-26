@@ -24,6 +24,14 @@ new sensors planned for v1"), which will need an explicit update if VL53L1X is a
   sensor; VL53L1X is a candidate near-field (<=60cm) precision cross-check only** — this
   inverts SEED-001's original "VL53L1X primary" framing. Any production use should default
   to a ~100-150ms timing budget, not the ~33ms library default. (Spike 002)
+- VL53L1X instability is range-triggered, not surface-triggered: ~20cm readings were clean
+  for every surface tested (including glass/dark, the "hardest" cases), while ~45cm readings
+  were unstable for every surface including plain glossy material. **If VL53L1X is used as a
+  near-field cross-check, keep it well inside its clean zone (<=20-30cm), not stretched
+  toward the ~60cm ceiling.** Also: a `Range Valid` status alone is not sufficient to trust a
+  VL53L1X reading — one instance of a `Range Valid`-status 0mm reading was observed; any
+  production use needs a plausibility/continuity check on the value itself, not just the
+  status string. (Spike 003)
 
 ## Spikes
 
@@ -31,5 +39,5 @@ new sensors planned for v1"), which will need an explicit update if VL53L1X is a
 |---|------|------|-----------|---------|------|
 | 001 | vl53l1x-bringup | standard | VL53L1X returns plausible readings over I2C | ✓ VALIDATED | hardware, i2c, vl53l1x |
 | 002 | vl53l1x-vs-ultrasonic-accuracy | comparison | Accuracy/noise/range vs ultrasonic | ⚠ PARTIAL | hardware, comparison |
-| 003 | problem-surface-failure-modes | standard | Real failure modes on household surfaces | PENDING | hardware, reliability |
+| 003 | problem-surface-failure-modes | standard | Real failure modes on household surfaces | ⚠ PARTIAL | hardware, reliability |
 | 004 | dual-sensor-sensorhub-integration | standard | Both sensors readable without contention; arbitration sketch | PENDING | integration, architecture |

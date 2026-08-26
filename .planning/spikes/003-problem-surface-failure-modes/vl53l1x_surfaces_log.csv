@@ -1,0 +1,330 @@
+timestamp,segment,distance_desc,distance_mm,status
+1787717728.870,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717729.168,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717729.382,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717729.596,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717729.808,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717730.022,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717730.235,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717730.447,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717730.661,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717730.873,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",102,Range Valid
+1787717731.087,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717731.300,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717731.514,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",104,Range Valid
+1787717731.725,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",103,Range Valid
+1787717731.939,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",97,Range Valid
+1787717732.153,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",96,Range Valid
+1787717732.366,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",94,Range Valid
+1787717732.580,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",91,Range Valid
+1787717732.792,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",94,Range Valid
+1787717733.005,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717733.219,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717733.433,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717733.647,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",94,Range Valid
+1787717733.861,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",94,Range Valid
+1787717734.074,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717734.288,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717734.502,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717734.715,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717734.929,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717735.142,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717735.356,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",93,Range Valid
+1787717735.570,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717735.781,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717735.993,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",94,Range Valid
+1787717736.206,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",92,Range Valid
+1787717736.420,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",97,Range Valid
+1787717736.633,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",111,Range Valid
+1787717736.847,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",128,Range Valid
+1787717737.061,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",131,Range Valid
+1787717737.275,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",131,Range Valid
+1787717737.488,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",128,Range Valid
+1787717737.699,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",124,Range Valid
+1787717737.913,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",111,Range Valid
+1787717738.126,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",114,Range Valid
+1787717738.340,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",132,Range Valid
+1787717738.553,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",135,Range Valid
+1787717738.764,baseline_matte_hard_30cm,"matte hard surface (book cover, wall) at ~30cm",121,Range Valid
+1787717789.692,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",208,Range Valid
+1787717789.906,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",211,Range Valid
+1787717790.119,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",235,Range Valid
+1787717790.333,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",232,Range Valid
+1787717790.546,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",230,Range Valid
+1787717790.757,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",227,Range Valid
+1787717790.971,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",229,Range Valid
+1787717791.185,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",230,Range Valid
+1787717791.398,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",227,Range Valid
+1787717791.612,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",221,Range Valid
+1787717791.823,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",213,Range Valid
+1787717792.037,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",215,Range Valid
+1787717792.250,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",208,Range Valid
+1787717792.464,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",203,Range Valid
+1787717792.678,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",200,Range Valid
+1787717792.891,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",186,Range Valid
+1787717793.104,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",183,Range Valid
+1787717793.318,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",182,Range Valid
+1787717793.531,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",185,Range Valid
+1787717793.745,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",190,Range Valid
+1787717793.959,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",191,Range Valid
+1787717794.172,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",195,Range Valid
+1787717794.386,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",188,Range Valid
+1787717794.600,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",188,Range Valid
+1787717794.811,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",179,Range Valid
+1787717795.025,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",167,Range Valid
+1787717795.238,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",118,Range Valid
+1787717795.452,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",99,Range Valid
+1787717795.666,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",82,Range Valid
+1787717795.878,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",77,Range Valid
+1787717796.092,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",66,Range Valid
+1787717796.306,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",72,Range Valid
+1787717796.519,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",95,Range Valid
+1787717796.731,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",112,Range Valid
+1787717796.944,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",146,Range Valid
+1787717797.158,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",162,Range Valid
+1787717797.370,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",163,Range Valid
+1787717797.584,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",156,Range Valid
+1787717797.797,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",136,Range Valid
+1787717798.011,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",137,Range Valid
+1787717798.225,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",147,Range Valid
+1787717798.438,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",149,Range Valid
+1787717798.652,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",152,Range Valid
+1787717798.865,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",152,Range Valid
+1787717799.079,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",154,Range Valid
+1787717799.292,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",151,Range Valid
+1787717799.506,glossy_reflective_20cm,"glossy surface (phone screen, glossy magazine) at ~20cm",149,Range Valid
+1787717832.256,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),-1,Signal Fail
+1787717832.469,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),154,Range Valid
+1787717832.683,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),139,Range Valid
+1787717832.896,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),119,Range Valid
+1787717833.110,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),137,Range Valid
+1787717833.324,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),193,Range Valid
+1787717833.537,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),176,Range Valid
+1787717833.751,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),457,Range Valid
+1787717833.965,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),475,Range Valid
+1787717834.178,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),484,Range Valid
+1787717834.392,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),489,Range Valid
+1787717834.605,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),491,Range Valid
+1787717834.817,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),484,Range Valid
+1787717835.031,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),474,Range Valid
+1787717835.245,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),486,Range Valid
+1787717835.458,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),495,Range Valid
+1787717835.672,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),469,Range Valid
+1787717835.883,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),440,Range Valid
+1787717836.097,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),376,Range Valid
+1787717836.311,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),-1,No Update
+1787717836.522,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),297,Range Valid
+1787717836.733,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),272,Range Valid
+1787717836.946,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),302,Range Valid
+1787717837.160,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),324,Range Valid
+1787717837.374,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),362,Range Valid
+1787717837.587,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),372,Range Valid
+1787717837.800,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),389,Range Valid
+1787717838.014,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),389,Range Valid
+1787717838.228,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),398,Range Valid
+1787717838.441,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),400,Range Valid
+1787717838.655,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),402,Range Valid
+1787717838.868,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),404,Range Valid
+1787717839.082,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),409,Range Valid
+1787717839.296,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),405,Range Valid
+1787717839.509,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),410,Range Valid
+1787717839.723,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),408,Range Valid
+1787717839.937,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),403,Range Valid
+1787717840.150,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),402,Range Valid
+1787717840.364,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),404,Range Valid
+1787717840.577,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),414,Range Valid
+1787717840.788,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),410,Range Valid
+1787717841.002,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),412,Range Valid
+1787717841.215,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),414,Range Valid
+1787717841.429,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),390,Range Valid
+1787717841.643,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),389,Range Valid
+1787717841.855,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),402,Range Valid
+1787717842.068,glossy_reflective_45cm,glossy surface at ~45cm (near this sensor's known ceiling),404,Range Valid
+1787717872.440,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",-1,Signal Fail
+1787717872.654,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",-1,No Update
+1787717872.867,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",82,Range Valid
+1787717873.081,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",81,Range Valid
+1787717873.295,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",82,Range Valid
+1787717873.508,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",82,Range Valid
+1787717873.719,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",82,Range Valid
+1787717873.933,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",81,Range Valid
+1787717874.146,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",82,Range Valid
+1787717874.360,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",80,Range Valid
+1787717874.574,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",79,Range Valid
+1787717874.785,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",75,Range Valid
+1787717874.999,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",74,Range Valid
+1787717875.213,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",74,Range Valid
+1787717875.426,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",74,Range Valid
+1787717875.640,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",76,Range Valid
+1787717875.852,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",80,Range Valid
+1787717876.066,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",80,Range Valid
+1787717876.280,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",106,Range Valid
+1787717876.493,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",129,Range Valid
+1787717876.707,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",130,Range Valid
+1787717876.920,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",127,Range Valid
+1787717877.134,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",126,Range Valid
+1787717877.348,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",113,Range Valid
+1787717877.561,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",127,Range Valid
+1787717877.772,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",124,Range Valid
+1787717877.986,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",121,Range Valid
+1787717878.199,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",124,Range Valid
+1787717878.413,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",125,Range Valid
+1787717878.627,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",126,Range Valid
+1787717878.837,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",122,Range Valid
+1787717879.051,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",124,Range Valid
+1787717879.265,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",129,Range Valid
+1787717879.478,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",113,Range Valid
+1787717879.692,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",64,Range Valid
+1787717879.906,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",40,Range Valid
+1787717880.120,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",33,Range Valid
+1787717880.333,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",44,Range Valid
+1787717880.547,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",-1,Signal Fail
+1787717880.761,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",108,Range Valid
+1787717880.974,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",119,Range Valid
+1787717881.188,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",117,Range Valid
+1787717881.401,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",118,Range Valid
+1787717881.615,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",119,Range Valid
+1787717881.826,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",118,Range Valid
+1787717882.040,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",125,Range Valid
+1787717882.253,dark_absorptive_20cm,"black/dark matte surface (dark cloth, dark cardboard) at ~20cm",121,Range Valid
+1787717893.963,dark_absorptive_45cm,black/dark matte surface at ~45cm,69,Range Valid
+1787717894.176,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717894.390,dark_absorptive_45cm,black/dark matte surface at ~45cm,69,Range Valid
+1787717894.603,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717894.816,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717895.030,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717895.244,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717895.457,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717895.671,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717895.885,dark_absorptive_45cm,black/dark matte surface at ~45cm,73,Range Valid
+1787717896.098,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717896.312,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717896.526,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717896.738,dark_absorptive_45cm,black/dark matte surface at ~45cm,69,Range Valid
+1787717896.951,dark_absorptive_45cm,black/dark matte surface at ~45cm,68,Range Valid
+1787717897.165,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717897.379,dark_absorptive_45cm,black/dark matte surface at ~45cm,69,Range Valid
+1787717897.591,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717897.802,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717898.015,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717898.229,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717898.442,dark_absorptive_45cm,black/dark matte surface at ~45cm,70,Range Valid
+1787717898.656,dark_absorptive_45cm,black/dark matte surface at ~45cm,69,Range Valid
+1787717898.867,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717899.080,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717899.294,dark_absorptive_45cm,black/dark matte surface at ~45cm,71,Range Valid
+1787717899.508,dark_absorptive_45cm,black/dark matte surface at ~45cm,-1,No Update
+1787717899.719,dark_absorptive_45cm,black/dark matte surface at ~45cm,0,Range Valid
+1787717899.933,dark_absorptive_45cm,black/dark matte surface at ~45cm,0,Range Valid
+1787717900.147,dark_absorptive_45cm,black/dark matte surface at ~45cm,-1,Signal Fail
+1787717900.360,dark_absorptive_45cm,black/dark matte surface at ~45cm,-1,No Update
+1787717900.574,dark_absorptive_45cm,black/dark matte surface at ~45cm,55,Range Valid
+1787717900.785,dark_absorptive_45cm,black/dark matte surface at ~45cm,86,Range Valid
+1787717900.998,dark_absorptive_45cm,black/dark matte surface at ~45cm,38,Range Valid
+1787717901.212,dark_absorptive_45cm,black/dark matte surface at ~45cm,36,Range Valid
+1787717901.426,dark_absorptive_45cm,black/dark matte surface at ~45cm,105,Range Valid
+1787717901.639,dark_absorptive_45cm,black/dark matte surface at ~45cm,115,Range Valid
+1787717901.850,dark_absorptive_45cm,black/dark matte surface at ~45cm,80,Range Valid
+1787717902.064,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717902.277,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717902.491,dark_absorptive_45cm,black/dark matte surface at ~45cm,82,Range Valid
+1787717902.704,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717902.918,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717903.132,dark_absorptive_45cm,black/dark matte surface at ~45cm,84,Range Valid
+1787717903.345,dark_absorptive_45cm,black/dark matte surface at ~45cm,82,Range Valid
+1787717903.559,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717903.770,dark_absorptive_45cm,black/dark matte surface at ~45cm,83,Range Valid
+1787717923.856,glass_mirror_20cm,glass or mirror surface at ~20cm,206,Range Valid
+1787717924.069,glass_mirror_20cm,glass or mirror surface at ~20cm,201,Range Valid
+1787717924.283,glass_mirror_20cm,glass or mirror surface at ~20cm,244,Range Valid
+1787717924.496,glass_mirror_20cm,glass or mirror surface at ~20cm,263,Range Valid
+1787717924.710,glass_mirror_20cm,glass or mirror surface at ~20cm,267,Range Valid
+1787717924.924,glass_mirror_20cm,glass or mirror surface at ~20cm,261,Range Valid
+1787717925.137,glass_mirror_20cm,glass or mirror surface at ~20cm,259,Range Valid
+1787717925.351,glass_mirror_20cm,glass or mirror surface at ~20cm,258,Range Valid
+1787717925.565,glass_mirror_20cm,glass or mirror surface at ~20cm,257,Range Valid
+1787717925.778,glass_mirror_20cm,glass or mirror surface at ~20cm,254,Range Valid
+1787717925.992,glass_mirror_20cm,glass or mirror surface at ~20cm,258,Range Valid
+1787717926.205,glass_mirror_20cm,glass or mirror surface at ~20cm,242,Range Valid
+1787717926.419,glass_mirror_20cm,glass or mirror surface at ~20cm,234,Range Valid
+1787717926.632,glass_mirror_20cm,glass or mirror surface at ~20cm,216,Range Valid
+1787717926.846,glass_mirror_20cm,glass or mirror surface at ~20cm,214,Range Valid
+1787717927.060,glass_mirror_20cm,glass or mirror surface at ~20cm,210,Range Valid
+1787717927.273,glass_mirror_20cm,glass or mirror surface at ~20cm,211,Range Valid
+1787717927.487,glass_mirror_20cm,glass or mirror surface at ~20cm,199,Range Valid
+1787717927.701,glass_mirror_20cm,glass or mirror surface at ~20cm,205,Range Valid
+1787717927.915,glass_mirror_20cm,glass or mirror surface at ~20cm,222,Range Valid
+1787717928.128,glass_mirror_20cm,glass or mirror surface at ~20cm,207,Range Valid
+1787717928.342,glass_mirror_20cm,glass or mirror surface at ~20cm,204,Range Valid
+1787717928.555,glass_mirror_20cm,glass or mirror surface at ~20cm,198,Range Valid
+1787717928.769,glass_mirror_20cm,glass or mirror surface at ~20cm,192,Range Valid
+1787717928.983,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717929.196,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717929.410,glass_mirror_20cm,glass or mirror surface at ~20cm,191,Range Valid
+1787717929.624,glass_mirror_20cm,glass or mirror surface at ~20cm,193,Range Valid
+1787717929.834,glass_mirror_20cm,glass or mirror surface at ~20cm,194,Range Valid
+1787717930.048,glass_mirror_20cm,glass or mirror surface at ~20cm,193,Range Valid
+1787717930.262,glass_mirror_20cm,glass or mirror surface at ~20cm,197,Range Valid
+1787717930.475,glass_mirror_20cm,glass or mirror surface at ~20cm,194,Range Valid
+1787717930.690,glass_mirror_20cm,glass or mirror surface at ~20cm,188,Range Valid
+1787717930.902,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717931.115,glass_mirror_20cm,glass or mirror surface at ~20cm,193,Range Valid
+1787717931.329,glass_mirror_20cm,glass or mirror surface at ~20cm,198,Range Valid
+1787717931.543,glass_mirror_20cm,glass or mirror surface at ~20cm,198,Range Valid
+1787717931.754,glass_mirror_20cm,glass or mirror surface at ~20cm,193,Range Valid
+1787717931.968,glass_mirror_20cm,glass or mirror surface at ~20cm,192,Range Valid
+1787717932.182,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717932.395,glass_mirror_20cm,glass or mirror surface at ~20cm,189,Range Valid
+1787717932.609,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717932.823,glass_mirror_20cm,glass or mirror surface at ~20cm,191,Range Valid
+1787717933.036,glass_mirror_20cm,glass or mirror surface at ~20cm,193,Range Valid
+1787717933.249,glass_mirror_20cm,glass or mirror surface at ~20cm,190,Range Valid
+1787717933.462,glass_mirror_20cm,glass or mirror surface at ~20cm,192,Range Valid
+1787717933.676,glass_mirror_20cm,glass or mirror surface at ~20cm,194,Range Valid
+1787718130.402,glass_mirror_45cm,glass or mirror surface at ~45cm,106,Range Valid
+1787718130.615,glass_mirror_45cm,glass or mirror surface at ~45cm,182,Range Valid
+1787718130.827,glass_mirror_45cm,glass or mirror surface at ~45cm,482,Range Valid
+1787718131.041,glass_mirror_45cm,glass or mirror surface at ~45cm,480,Range Valid
+1787718131.255,glass_mirror_45cm,glass or mirror surface at ~45cm,444,Range Valid
+1787718131.468,glass_mirror_45cm,glass or mirror surface at ~45cm,480,Range Valid
+1787718131.682,glass_mirror_45cm,glass or mirror surface at ~45cm,477,Range Valid
+1787718131.893,glass_mirror_45cm,glass or mirror surface at ~45cm,491,Range Valid
+1787718132.107,glass_mirror_45cm,glass or mirror surface at ~45cm,495,Range Valid
+1787718132.320,glass_mirror_45cm,glass or mirror surface at ~45cm,454,Range Valid
+1787718132.534,glass_mirror_45cm,glass or mirror surface at ~45cm,512,Range Valid
+1787718132.748,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,No Update
+1787718132.961,glass_mirror_45cm,glass or mirror surface at ~45cm,298,Range Valid
+1787718133.174,glass_mirror_45cm,glass or mirror surface at ~45cm,371,Range Valid
+1787718133.388,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,No Update
+1787718133.602,glass_mirror_45cm,glass or mirror surface at ~45cm,476,Range Valid
+1787718133.813,glass_mirror_45cm,glass or mirror surface at ~45cm,476,Range Valid
+1787718134.027,glass_mirror_45cm,glass or mirror surface at ~45cm,478,Range Valid
+1787718134.240,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,Signal Fail
+1787718134.454,glass_mirror_45cm,glass or mirror surface at ~45cm,440,Range Valid
+1787718134.668,glass_mirror_45cm,glass or mirror surface at ~45cm,421,Range Valid
+1787718134.881,glass_mirror_45cm,glass or mirror surface at ~45cm,484,Range Valid
+1787718135.094,glass_mirror_45cm,glass or mirror surface at ~45cm,474,Range Valid
+1787718135.308,glass_mirror_45cm,glass or mirror surface at ~45cm,462,Range Valid
+1787718135.522,glass_mirror_45cm,glass or mirror surface at ~45cm,471,Range Valid
+1787718135.736,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,Signal Fail
+1787718135.949,glass_mirror_45cm,glass or mirror surface at ~45cm,491,Range Valid
+1787718136.163,glass_mirror_45cm,glass or mirror surface at ~45cm,481,Range Valid
+1787718136.377,glass_mirror_45cm,glass or mirror surface at ~45cm,497,Range Valid
+1787718136.590,glass_mirror_45cm,glass or mirror surface at ~45cm,481,Range Valid
+1787718136.802,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,Signal Fail
+1787718137.016,glass_mirror_45cm,glass or mirror surface at ~45cm,489,Range Valid
+1787718137.229,glass_mirror_45cm,glass or mirror surface at ~45cm,456,Range Valid
+1787718137.443,glass_mirror_45cm,glass or mirror surface at ~45cm,431,Range Valid
+1787718137.657,glass_mirror_45cm,glass or mirror surface at ~45cm,306,Range Valid
+1787718137.870,glass_mirror_45cm,glass or mirror surface at ~45cm,461,Range Valid
+1787718138.083,glass_mirror_45cm,glass or mirror surface at ~45cm,482,Range Valid
+1787718138.297,glass_mirror_45cm,glass or mirror surface at ~45cm,478,Range Valid
+1787718138.510,glass_mirror_45cm,glass or mirror surface at ~45cm,462,Range Valid
+1787718138.724,glass_mirror_45cm,glass or mirror surface at ~45cm,464,Range Valid
+1787718138.938,glass_mirror_45cm,glass or mirror surface at ~45cm,463,Range Valid
+1787718139.152,glass_mirror_45cm,glass or mirror surface at ~45cm,462,Range Valid
+1787718139.366,glass_mirror_45cm,glass or mirror surface at ~45cm,462,Range Valid
+1787718139.579,glass_mirror_45cm,glass or mirror surface at ~45cm,445,Range Valid
+1787718139.790,glass_mirror_45cm,glass or mirror surface at ~45cm,-1,Signal Fail
+1787718140.004,glass_mirror_45cm,glass or mirror surface at ~45cm,411,Range Valid
+1787718140.217,glass_mirror_45cm,glass or mirror surface at ~45cm,451,Range Valid

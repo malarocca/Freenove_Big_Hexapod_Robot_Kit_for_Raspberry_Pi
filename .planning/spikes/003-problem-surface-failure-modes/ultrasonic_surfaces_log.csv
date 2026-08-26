@@ -1,0 +1,351 @@
+timestamp,segment,distance_desc,distance_cm
+1787717506.345,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717506.546,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.7
+1787717506.746,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717506.947,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717507.147,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717507.347,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,37.1
+1787717507.548,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,37.1
+1787717507.748,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,37.1
+1787717507.949,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,37.1
+1787717508.149,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,37.1
+1787717508.350,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717508.550,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717508.750,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717508.951,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.7
+1787717509.151,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717509.352,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717509.552,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717509.752,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717509.953,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717510.153,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717510.354,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717510.554,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717510.754,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717510.955,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717511.155,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717511.355,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.6
+1787717511.556,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,36.1
+1787717511.756,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,35.3
+1787717511.957,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,35.0
+1787717512.157,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,34.8
+1787717512.357,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,34.2
+1787717512.558,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,33.7
+1787717512.758,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,33.4
+1787717512.959,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.6
+1787717513.159,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.3
+1787717513.359,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717513.560,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,31.8
+1787717513.760,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,31.8
+1787717513.961,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717514.161,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.9
+1787717514.361,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.9
+1787717514.562,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.4
+1787717514.762,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.3
+1787717514.963,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,31.9
+1787717515.163,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717515.364,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,31.9
+1787717515.564,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717515.765,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717515.965,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,32.1
+1787717516.165,baseline_hard_flat_30cm,hard flat surface (book/wall) at ~30cm,31.8
+1787717546.794,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),18.0
+1787717546.994,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717547.194,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717547.395,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717547.595,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.0
+1787717547.796,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717547.996,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717548.196,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717548.397,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717548.597,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717548.798,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717548.998,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.9
+1787717549.198,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.0
+1787717549.399,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717549.599,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),17.3
+1787717549.800,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.7
+1787717550.000,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.6
+1787717550.200,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.6
+1787717550.401,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.6
+1787717550.601,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.0
+1787717550.802,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),15.6
+1787717551.002,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),13.2
+1787717551.202,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),10.9
+1787717551.403,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.5
+1787717551.603,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.1
+1787717551.804,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),8.8
+1787717552.004,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.1
+1787717552.204,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.2
+1787717552.405,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.5
+1787717552.605,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),9.8
+1787717552.806,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),10.9
+1787717553.006,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),11.6
+1787717553.207,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.2
+1787717553.407,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.2
+1787717553.607,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.3
+1787717553.808,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.6
+1787717554.008,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.6
+1787717554.209,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.6
+1787717554.409,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),12.2
+1787717554.609,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),13.3
+1787717554.810,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),13.6
+1787717555.010,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),14.3
+1787717555.211,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),14.6
+1787717555.411,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),14.6
+1787717555.612,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),15.3
+1787717555.812,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),15.6
+1787717556.013,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),15.4
+1787717556.213,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.0
+1787717556.414,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.3
+1787717556.614,soft_fabric_15cm,pillow or folded blanket at ~15cm (inside STOP_THRESHOLD_CM=20),16.3
+1787717564.124,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.1
+1787717564.324,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.3
+1787717564.525,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),32.4
+1787717564.725,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),32.4
+1787717564.925,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.9
+1787717565.126,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.8
+1787717565.326,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.6
+1787717565.527,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717565.727,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717565.928,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717566.128,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717566.329,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.0
+1787717566.529,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.0
+1787717566.729,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),31.0
+1787717566.930,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717567.130,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.4
+1787717567.331,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717567.531,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717567.731,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.5
+1787717567.932,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.3
+1787717568.132,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717568.333,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.9
+1787717568.533,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.7
+1787717568.734,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.4
+1787717568.934,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),28.2
+1787717569.134,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),28.8
+1787717569.335,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.9
+1787717569.535,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717569.735,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.9
+1787717569.936,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717570.136,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717570.337,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717570.537,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717570.737,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717570.938,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717571.138,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717571.338,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.0
+1787717571.539,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.7
+1787717571.739,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.8
+1787717571.940,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.8
+1787717572.140,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.8
+1787717572.340,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.7
+1787717572.541,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.7
+1787717572.741,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.7
+1787717572.942,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.3
+1787717573.142,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.2
+1787717573.343,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),30.2
+1787717573.543,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.7
+1787717573.743,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),29.6
+1787717573.944,soft_fabric_30cm,pillow or folded blanket at ~30cm (inside RESUME_THRESHOLD_CM=35),28.8
+1787717611.322,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.0
+1787717611.523,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.0
+1787717611.723,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.0
+1787717611.924,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.5
+1787717612.124,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.5
+1787717612.324,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.5
+1787717612.525,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.0
+1787717612.725,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,30.0
+1787717612.925,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,29.9
+1787717613.126,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,29.9
+1787717613.326,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,29.1
+1787717613.527,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,28.5
+1787717613.727,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.8
+1787717613.927,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.4
+1787717614.128,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.4
+1787717614.328,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.2
+1787717614.529,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.1
+1787717614.729,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.2
+1787717614.930,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.4
+1787717615.130,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.4
+1787717615.331,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,26.4
+1787717615.531,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,24.7
+1787717615.731,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,20.3
+1787717615.932,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,18.0
+1787717616.132,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717616.333,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717616.533,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.6
+1787717616.734,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.6
+1787717616.934,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717617.134,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717617.335,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717617.535,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.3
+1787717617.736,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717617.936,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717618.136,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717618.337,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.3
+1787717618.537,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.9
+1787717618.738,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,18.5
+1787717618.938,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,18.6
+1787717619.138,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,18.6
+1787717619.339,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.3
+1787717619.539,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.6
+1787717619.739,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.6
+1787717619.940,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.9
+1787717620.140,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.3
+1787717620.341,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,16.3
+1787717620.541,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717620.741,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717620.942,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,17.0
+1787717621.142,angled_hard_30cm,hard flat surface tilted ~30-45deg off perpendicular at ~30cm,18.0
+1787717634.653,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,52.1
+1787717634.854,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,52.6
+1787717635.054,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,52.8
+1787717635.255,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,53.0
+1787717635.455,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,53.1
+1787717635.656,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,54.0
+1787717635.856,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,54.2
+1787717636.057,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,54.2
+1787717636.257,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,53.8
+1787717636.458,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,52.3
+1787717636.658,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,51.4
+1787717636.859,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.9
+1787717637.059,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.3
+1787717637.260,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.1
+1787717637.460,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.6
+1787717637.661,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.1
+1787717637.861,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,48.6
+1787717638.062,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,48.0
+1787717638.262,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.4
+1787717638.462,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,45.8
+1787717638.663,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,45.8
+1787717638.863,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.1
+1787717639.064,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.1
+1787717639.264,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.5
+1787717639.465,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.8
+1787717639.665,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.8
+1787717639.865,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,47.4
+1787717640.066,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.6
+1787717640.266,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.6
+1787717640.467,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.2
+1787717640.667,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.6
+1787717640.868,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.2
+1787717641.068,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.2
+1787717641.268,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,47.0
+1787717641.469,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,47.0
+1787717641.669,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.4
+1787717641.870,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,46.4
+1787717642.070,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.2
+1787717642.270,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.2
+1787717642.471,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,47.6
+1787717642.671,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,47.8
+1787717642.872,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.7
+1787717643.072,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.7
+1787717643.273,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,50.3
+1787717643.473,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.3
+1787717643.674,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.2
+1787717643.874,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,49.2
+1787717644.074,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,51.0
+1787717644.275,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,51.5
+1787717644.475,angled_hard_50cm,hard flat surface tilted ~30-45deg off perpendicular at ~50cm,51.0
+1787717668.198,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",23.2
+1787717668.399,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",23.4
+1787717668.599,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",23.2
+1787717668.799,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",23.2
+1787717669.000,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",23.1
+1787717669.200,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",22.9
+1787717669.400,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",22.6
+1787717669.601,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",22.2
+1787717669.801,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",22.2
+1787717670.002,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",22.2
+1787717670.202,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",21.9
+1787717670.402,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",21.9
+1787717670.603,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",21.5
+1787717670.803,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.9
+1787717671.004,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717671.204,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.6
+1787717671.404,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717671.605,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717671.806,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.3
+1787717672.006,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717672.206,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717672.407,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717672.607,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.6
+1787717672.808,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.6
+1787717673.008,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717673.208,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717673.409,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717673.609,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.6
+1787717673.810,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.6
+1787717674.010,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.3
+1787717674.211,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717674.411,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.6
+1787717674.612,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717674.812,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717675.012,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.3
+1787717675.213,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717675.413,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.9
+1787717675.613,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.9
+1787717675.814,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.9
+1787717676.014,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.3
+1787717676.215,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717676.415,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717676.615,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.9
+1787717676.816,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717677.016,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717677.217,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.3
+1787717677.417,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",20.2
+1787717677.617,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.7
+1787717677.818,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.6
+1787717678.018,low_profile_20cm,"low object (book spine, low shelf edge) below main beam axis at ~20cm",19.6
+1787717690.849,low_profile_40cm,low object below main beam axis at ~40cm,34.5
+1787717691.050,low_profile_40cm,low object below main beam axis at ~40cm,34.3
+1787717691.250,low_profile_40cm,low object below main beam axis at ~40cm,33.4
+1787717691.451,low_profile_40cm,low object below main beam axis at ~40cm,32.4
+1787717691.651,low_profile_40cm,low object below main beam axis at ~40cm,31.9
+1787717691.852,low_profile_40cm,low object below main beam axis at ~40cm,31.9
+1787717692.052,low_profile_40cm,low object below main beam axis at ~40cm,31.6
+1787717692.253,low_profile_40cm,low object below main beam axis at ~40cm,31.6
+1787717692.453,low_profile_40cm,low object below main beam axis at ~40cm,31.6
+1787717692.653,low_profile_40cm,low object below main beam axis at ~40cm,35.8
+1787717692.854,low_profile_40cm,low object below main beam axis at ~40cm,36.9
+1787717693.054,low_profile_40cm,low object below main beam axis at ~40cm,38.8
+1787717693.255,low_profile_40cm,low object below main beam axis at ~40cm,43.3
+1787717693.455,low_profile_40cm,low object below main beam axis at ~40cm,43.7
+1787717693.655,low_profile_40cm,low object below main beam axis at ~40cm,43.7
+1787717693.856,low_profile_40cm,low object below main beam axis at ~40cm,42.3
+1787717694.056,low_profile_40cm,low object below main beam axis at ~40cm,41.8
+1787717694.257,low_profile_40cm,low object below main beam axis at ~40cm,40.7
+1787717694.457,low_profile_40cm,low object below main beam axis at ~40cm,40.2
+1787717694.658,low_profile_40cm,low object below main beam axis at ~40cm,39.7
+1787717694.858,low_profile_40cm,low object below main beam axis at ~40cm,39.7
+1787717695.058,low_profile_40cm,low object below main beam axis at ~40cm,39.5
+1787717695.259,low_profile_40cm,low object below main beam axis at ~40cm,39.0
+1787717695.459,low_profile_40cm,low object below main beam axis at ~40cm,38.1
+1787717695.660,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717695.860,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717696.061,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717696.261,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717696.462,low_profile_40cm,low object below main beam axis at ~40cm,36.4
+1787717696.662,low_profile_40cm,low object below main beam axis at ~40cm,35.9
+1787717696.862,low_profile_40cm,low object below main beam axis at ~40cm,35.9
+1787717697.063,low_profile_40cm,low object below main beam axis at ~40cm,36.4
+1787717697.263,low_profile_40cm,low object below main beam axis at ~40cm,36.9
+1787717697.464,low_profile_40cm,low object below main beam axis at ~40cm,37.6
+1787717697.664,low_profile_40cm,low object below main beam axis at ~40cm,37.9
+1787717697.865,low_profile_40cm,low object below main beam axis at ~40cm,37.9
+1787717698.065,low_profile_40cm,low object below main beam axis at ~40cm,37.8
+1787717698.265,low_profile_40cm,low object below main beam axis at ~40cm,37.1
+1787717698.466,low_profile_40cm,low object below main beam axis at ~40cm,37.3
+1787717698.666,low_profile_40cm,low object below main beam axis at ~40cm,37.3
+1787717698.866,low_profile_40cm,low object below main beam axis at ~40cm,37.1
+1787717699.067,low_profile_40cm,low object below main beam axis at ~40cm,36.9
+1787717699.267,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717699.468,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717699.668,low_profile_40cm,low object below main beam axis at ~40cm,36.7
+1787717699.868,low_profile_40cm,low object below main beam axis at ~40cm,36.9
+1787717700.069,low_profile_40cm,low object below main beam axis at ~40cm,36.9
+1787717700.269,low_profile_40cm,low object below main beam axis at ~40cm,36.8
+1787717700.470,low_profile_40cm,low object below main beam axis at ~40cm,36.8
+1787717700.670,low_profile_40cm,low object below main beam axis at ~40cm,36.8
