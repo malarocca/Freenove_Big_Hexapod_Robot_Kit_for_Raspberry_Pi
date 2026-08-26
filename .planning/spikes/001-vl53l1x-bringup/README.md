@@ -62,6 +62,14 @@ Distance readings in mm that decrease as a hand/object approaches the sensor, wi
    register (0x010F) over raw I2C via `smbus2` — got back `0xea`, the correct VL53L1X model ID.
    The chip responds correctly and consistently at its address; I2C communication itself is
    solid. Whatever was failing was in the ranging computation, not the bus/wiring.
+6. **Ruled out wrong-sensor-driver mismatch** (raised later, during spike 002, when the
+   VL53L1X's limited effective range was found): ST's VL6180X ToF sensor shares the exact
+   same default I2C address (0x29) as the VL53L1X, so bus presence alone can't distinguish
+   them. Read both chips' real identification registers directly: VL53L1X's ID register
+   (0x010F) returned `0xea`/`0xcc` (an exact match), while VL6180X's own ID register (0x0000)
+   returned `0x01` (nowhere near VL6180X's expected `0xb4`). Confirms the physical chip is
+   genuinely a VL53L1X and the Pimoroni `vl53l1x` driver is the correct one — not a
+   misconfigured/mismatched sensor profile.
 6. **Isolated the fix:** tried `tof.open(reset=True)` (forces a hardware reset before ranging)
    combined with long-range mode (mode 3, higher VCSEL power) and a large flat reflective
    target (a book) at close range. Result: ~92% valid readings (109/119 samples), values
