@@ -36,6 +36,7 @@ class MyWindow(QMainWindow,Ui_client):
         self.Button_Calibration.clicked.connect(self.showCalibrationWindow)
         self.Button_LED.clicked.connect(self.showLedWindow)
         self.Button_Face_ID.clicked.connect(self.showFaceWindow)
+        self.Button_Auto.clicked.connect(self.auto_mode_toggle)
         self.Button_Face_Recognition.clicked.connect(self.faceRecognition)
         self.Button_Sonic.clicked.connect(self.sonic)
         self.Button_Relax.clicked.connect(self.relax)
@@ -516,6 +517,9 @@ class MyWindow(QMainWindow,Ui_client):
                             #print('Power：',power_value1,power_value2)
                     except Exception as e:
                         print(e)
+                elif data[0]==cmd.CMD_AUTO:
+                    if len(data) >= 2:
+                        self.set_auto_status(data[1] == "1")
 
     #CONNECT
     def connect(self):
@@ -546,6 +550,11 @@ class MyWindow(QMainWindow,Ui_client):
                     pass
                 self.client.tcp_flag=False
                 self.client.turn_off_client()
+                # The robot deliberately keeps running auto mode under the server's
+                # bounded-runtime timer even after this client disconnects, so an Off
+                # badge here means "unknown to this client" -- reconnecting resyncs
+                # the true state from the server.
+                self.set_auto_status(False)
                 self.Button_Connect.setText('Connect')
                 self.timer_power.stop()
         except Exception as e:
@@ -619,6 +628,35 @@ class MyWindow(QMainWindow,Ui_client):
             self.client.send_data(command)
             self.Button_Buzzer.setText('Buzzer')
             #print (command)
+    #AUTO MODE
+    def auto_mode_toggle(self):
+        try:
+            if not self.client.tcp_flag:
+                self.set_auto_status(False)
+                message = "Not connected — connect to the robot before starting Auto Mode."
+                print(message)
+                QtWidgets.QToolTip.showText(self.Button_Auto.mapToGlobal(QtCore.QPoint(0, self.Button_Auto.height())), message, self.Button_Auto)
+                return
+            if self.Button_Auto.text() == 'Start Auto Mode':
+                command = cmd.CMD_AUTO + '#1' + '\n'
+            else:
+                command = cmd.CMD_AUTO + '#0' + '\n'
+            self.client.send_data(command)
+        except Exception as e:
+            print(e)
+
+    def set_auto_status(self, active):
+        try:
+            if active:
+                self.label_Auto_Status.setText("AUTO MODE ACTIVE")
+                self.label_Auto_Status.setStyleSheet("font: 10pt \"Arial\"; color: #35C759;")
+                self.Button_Auto.setText("Stop Auto Mode")
+            else:
+                self.label_Auto_Status.setText("Auto Mode: Off")
+                self.label_Auto_Status.setStyleSheet("font: 10pt \"Arial\"; color: #DCDCDC;")
+                self.Button_Auto.setText("Start Auto Mode")
+        except Exception as e:
+            print(e)
     #BALANCE
     def imu(self):
         if self.Button_IMU.text()=='Balance':
