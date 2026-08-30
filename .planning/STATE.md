@@ -3,15 +3,15 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: executing
-stopped_at: Phase 01 Plan 01-01 COMPLETE and merged; Wave 2 (plan 01-02, client GUI) not yet started
-last_updated: "2026-08-26T05:05:00.000Z"
-last_activity: 2026-08-26 -- Plan 01-01 Task 3 hardware walkthrough finished live (steps 4-9 + CMD_BALANCE variant, all passed), worktree merged to autonomy, worktree removed
+stopped_at: "Phase 01 Plan 01-01 complete and merged. Next up: plan 01-02 (Wave 2, client GUI Auto Mode toggle + status badge) -- not yet started, no blockers."
+last_updated: "2026-08-30T01:48:29.869Z"
+last_activity: 2026-08-30 -- Phase 01 execution started
 progress:
   total_phases: 4
   completed_phases: 0
   total_plans: 3
   completed_plans: 1
-  percent: 8
+  percent: 0
 ---
 
 # Project State
@@ -21,13 +21,13 @@ progress:
 See: .planning/PROJECT.md (updated 2026-08-06)
 
 **Core value:** The hexapod can move around on its own without crashing into things, pets, or kids.
-**Current focus:** Phase 01 — auto-mode-core-walk-avoid (Plan 01-01 complete; Wave 2 / plan 01-02 next)
+**Current focus:** Phase 01 — auto-mode-core-walk-avoid
 
 ## Current Position
 
 Phase: 01 (auto-mode-core-walk-avoid) — EXECUTING
-Plan: 1 of 3 (01-01 "Walking Skeleton") — COMPLETE, merged to `autonomy` (commit `db67780`)
-Status: Plan 01-01 fully done. All four implementation commits (`cdf822c`, `ba4efbb`,
+Plan: 1 of 3
+Status: Executing Phase 01
 `ff87cda` hysteresis, `12a7fda` dual-poller GPIO contention) merged from the worktree branch
 `worktree-agent-ab149f1102043bce0` (now deleted, along with its worktree). Task 3's 9-step
 hardware checkpoint passed end-to-end live on 2026-08-26: steps 1,2,3,6 (passed 2026-08-08),
@@ -38,7 +38,7 @@ suggestion), step 9 (disconnect/reconnect sync). A supplementary CMD_BALANCE#1
 manual-override variant was also verified. SUMMARY.md written and merged
 (`.planning/phases/01-auto-mode-core-walk-avoid/01-01-SUMMARY.md`).
 Next: Wave 2 (plan 01-02, client GUI Auto Mode toggle + status badge) — not yet started.
-Last activity: 2026-08-26 -- Task 3 walkthrough completed, worktree merged and cleaned up
+Last activity: 2026-08-30 -- Phase 01 execution started
 
 Progress: [█░░░░░░░░░] 8% (1 of 3 plans in Phase 01 complete; 0 of 4 phases complete)
 
